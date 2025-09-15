@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 export default function Projects() {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const [viewMode, setViewMode] = useState<'talents' | 'teams' | 'projects'>(user?.role === 'creator' ? 'projects' : 'talents');
+  const [viewMode, setViewMode] = useState<'talents' | 'teams' | 'agencies' | 'projects'>(user?.role === 'creator' ? 'projects' : 'talents');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedBudget, setSelectedBudget] = useState('all');
@@ -24,9 +24,9 @@ export default function Projects() {
     {
       id: 1,
       title: 'Brand Ambassador for Tech Startup',
-      company: 'Innovate Inc.',
+      company: 'Kampala Tech Solutions',
       location: 'Remote',
-      budget: 'UGX 1,500,000',
+      budget: 'UGX ---',
       description: 'Looking for an energetic brand ambassador to represent our new app. Must have strong social media presence.',
       skills: ['Social Media Marketing', 'Brand Representation', 'Content Creation'],
       type: 'gig'
@@ -34,9 +34,9 @@ export default function Projects() {
     {
       id: 2,
       title: 'Lead Actor for Short Film',
-      company: 'Starlight Pictures',
+      company: 'Nilewood Studios',
       location: 'Kampala, Uganda',
-      budget: 'UGX 2,000,000',
+      budget: 'UGX ---',
       description: 'Seeking a male lead actor for a drama short film. Acting experience required.',
       skills: ['Acting', 'Drama', 'Improvisation'],
       type: 'casting'
@@ -46,14 +46,14 @@ export default function Projects() {
   const talents = [
     {
       id: 1,
-      name: 'Emma Wilson',
+      name: 'Nakamya Fiona',
       title: 'Digital Marketing Specialist',
       category: 'digital-marketing',
       location: 'Kampala, Uganda',
       rating: 4.9,
       reviews: 127,
       hourlyRate: 320000,
-      avatar: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150',
+      avatar: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg',
       skills: ['Social Media Marketing', 'SEO', 'Content Strategy', 'Analytics'],
       completedProjects: 45,
       responseTime: '2 hours',
@@ -66,14 +66,14 @@ export default function Projects() {
     },
     {
       id: 2,
-      name: 'Sofia Rodriguez',
+      name: 'Nabatanzi Brenda',
       title: 'Professional Model & Actress',
       category: 'modeling',
       location: 'Entebbe, Uganda',
       rating: 4.8,
       reviews: 89,
       hourlyRate: 570000,
-      avatar: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=150',
+      avatar: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg',
       skills: ['Fashion Modeling', 'Commercial Acting', 'Brand Representation', 'Social Media'],
       completedProjects: 32,
       responseTime: '1 hour',
@@ -86,14 +86,14 @@ export default function Projects() {
     },
     {
       id: 3,
-      name: 'Maya Chen',
+      name: 'Apio Sharon',
       title: 'Event Management Expert',
       category: 'event-management',
       location: 'Jinja, Uganda',
       rating: 5.0,
       reviews: 156,
       hourlyRate: 360000,
-      avatar: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=150',
+      avatar: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg',
       skills: ['Corporate Events', 'Wedding Planning', 'Vendor Management', 'Budget Planning'],
       completedProjects: 78,
       responseTime: '30 minutes',
@@ -109,7 +109,7 @@ export default function Projects() {
   const teams = [
     {
       id: 1,
-      name: 'Creative Collective Agency',
+      name: 'Pearl Creatives',
       type: 'Full-Service Creative Agency',
       category: 'design',
       location: 'Kampala, Uganda',
@@ -117,7 +117,7 @@ export default function Projects() {
       reviews: 234,
       teamSize: 12,
       startingRate: 450000,
-      logo: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=150',
+      logo: 'https://via.placeholder.com/150',
       services: ['Brand Design', 'Web Development', 'Marketing Strategy', 'Content Creation'],
       completedProjects: 189,
       responseTime: '4 hours',
@@ -126,7 +126,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      name: 'Elite Marketing Solutions',
+      name: 'Murchison Marketing',
       type: 'Digital Marketing Agency',
       category: 'digital-marketing',
       location: 'Mbarara, Uganda',
@@ -134,12 +134,49 @@ export default function Projects() {
       reviews: 178,
       teamSize: 8,
       startingRate: 360000,
-      logo: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=150',
+      logo: 'https://via.placeholder.com/150',
       services: ['PPC Management', 'SEO', 'Social Media', 'Email Marketing'],
       completedProjects: 156,
       responseTime: '2 hours',
       description: 'Results-driven marketing agency with proven track record of ROI growth.',
       specialties: ['SaaS', 'E-commerce', 'Local Business', 'B2B']
+    }
+  ];
+
+  const agencies = [
+    {
+      id: 1,
+      name: 'Nile Valley Agencies',
+      type: 'Talent Agency',
+      category: 'acting',
+      location: 'Kampala, Uganda',
+      rating: 4.8,
+      reviews: 190,
+      teamSize: 25,
+      startingRate: 600000,
+      logo: 'https://via.placeholder.com/150',
+      services: ['Contract Negotiation', 'Career Management', 'Public Relations'],
+      completedProjects: 250,
+      responseTime: '3 hours',
+      description: 'Premier talent agency representing the best actors and models in the region.',
+      specialties: ['Film & Television', 'Commercials', 'Fashion']
+    },
+    {
+      id: 2,
+      name: 'Ruwenzori Creatives',
+      type: 'Modeling Agency',
+      category: 'modeling',
+      location: 'Jinja, Uganda',
+      rating: 4.7,
+      reviews: 150,
+      teamSize: 15,
+      startingRate: 500000,
+      logo: 'https://via.placeholder.com/150',
+      services: ['Portfolio Development', 'Casting Opportunities', 'Brand Collaborations'],
+      completedProjects: 200,
+      responseTime: '5 hours',
+      description: 'Connecting top models with leading brands and campaigns.',
+      specialties: ['Runway', 'Print', 'Commercial']
     }
   ];
 
@@ -166,6 +203,15 @@ export default function Projects() {
     return matchesCategory && matchesSearch;
   });
 
+  const filteredAgencies = agencies.filter(agency => {
+    const matchesCategory = selectedCategory === 'all' || agency.category === selectedCategory;
+    const matchesSearch = agency.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         agency.type.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         agency.services.some(service => service.toLowerCase().includes(searchQuery.toLowerCase()));
+
+    return matchesCategory && matchesSearch;
+  });
+
   const filteredProjects = projects.filter(project => {
     const matchesCategory = selectedCategory === 'all' || project.type === selectedCategory;
     const matchesSearch = project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -178,7 +224,7 @@ export default function Projects() {
     alert(`Applied to project ${projectId}`);
   };
 
-  const handleHire = (id: number, type: 'talent' | 'team') => {
+  const handleHire = (id: number, type: 'talent' | 'team' | 'agency') => {
     if (!user) {
       alert('Please sign up or sign in to proceed.');
       navigate('/signin');
@@ -234,7 +280,7 @@ export default function Projects() {
                   }`}
                 >
                   <Users className="w-5 h-5" />
-                  <span>Individual Talents</span>
+                  <span>Talents</span>
                 </button>
                 <button
                   onClick={() => setViewMode('teams')}
@@ -244,8 +290,19 @@ export default function Projects() {
                       : 'text-gray-300 hover:text-white hover:bg-white/10'
                   }`}
                 >
+                  <Users className="w-5 h-5" />
+                  <span>Teams</span>
+                </button>
+                <button
+                  onClick={() => setViewMode('agencies')}
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                    viewMode === 'agencies'
+                      ? 'bg-gradient-to-r from-rose-500 to-purple-600 text-white shadow-lg'
+                      : 'text-gray-300 hover:text-white hover:bg-white/10'
+                  }`}
+                >
                   <Building className="w-5 h-5" />
-                  <span>Teams & Agencies</span>
+                  <span>Agencies</span>
                 </button>
               </>
             )}
@@ -296,10 +353,10 @@ export default function Projects() {
               className="px-4 py-3 glass-effect rounded-xl border border-white/20 text-white bg-transparent focus:ring-2 focus:ring-rose-400 focus:border-transparent transition-all"
             >
               <option value="all" className="bg-gray-800">All Budgets</option>
-              <option value="under-500" className="bg-gray-800">Under UGX 190,000/hr</option>
-              <option value="500-1000" className="bg-gray-800">UGX 190,000–380,000/hr</option>
-              <option value="1000-5000" className="bg-gray-800">UGX 380,000–760,000/hr</option>
-              <option value="5000-plus" className="bg-gray-800">UGX 760,000+/hr</option>
+              <option value="under-500" className="bg-gray-800">Under UGX ---/hr</option>
+              <option value="500-1000" className="bg-gray-800">UGX ---/hr</option>
+              <option value="1000-5000" className="bg-gray-800">UGX ---/hr</option>
+              <option value="5000-plus" className="bg-gray-800">UGX ---+/hr</option>
             </select>
           )}
         </div>
@@ -381,7 +438,7 @@ export default function Projects() {
                     </div>
                     <div className="flex items-center space-x-2 text-gray-400">
                       <DollarSign className="w-4 h-4" />
-                      <span>UGX {talent.hourlyRate.toLocaleString()}/hr</span>
+                      <span>UGX ---/hr</span>
                     </div>
                   </div>
 
@@ -435,14 +492,14 @@ export default function Projects() {
                 </div>
               </div>
             ))
-          ) : (
+          ) : viewMode === 'teams' ? (
             filteredTeams.map((team) => (
               <div key={team.id} className="glass-effect rounded-2xl overflow-hidden hover-lift">
                 {/* Header */}
                 <div className="p-6 pb-4">
                   <div className="flex items-start space-x-4">
-                    <img 
-                      src={team.logo} 
+                    <img
+                      src={team.logo}
                       alt={team.name}
                       className="w-16 h-16 rounded-lg object-cover"
                     />
@@ -463,7 +520,7 @@ export default function Projects() {
                 {/* Details */}
                 <div className="px-6 pb-4">
                   <p className="text-gray-300 text-sm mb-4 line-clamp-2">{team.description}</p>
-                  
+
                   {/* Stats */}
                   <div className="grid grid-cols-2 gap-4 mb-4 text-sm">
                     <div className="flex items-center space-x-2 text-gray-400">
@@ -480,7 +537,7 @@ export default function Projects() {
                     </div>
                     <div className="flex items-center space-x-2 text-gray-400">
                       <DollarSign className="w-4 h-4" />
-                      <span>From UGX {team.startingRate.toLocaleString()}/hr</span>
+                      <span>From UGX ---/hr</span>
                     </div>
                   </div>
 
@@ -534,12 +591,112 @@ export default function Projects() {
                 </div>
               </div>
             ))
-          )}
+          ) : viewMode === 'agencies' ? (
+            filteredAgencies.map((agency) => (
+              <div key={agency.id} className="glass-effect rounded-2xl overflow-hidden hover-lift">
+                {/* Header */}
+                <div className="p-6 pb-4">
+                  <div className="flex items-start space-x-4">
+                    <img
+                      src={agency.logo}
+                      alt={agency.name}
+                      className="w-16 h-16 rounded-lg object-cover"
+                    />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-white">{agency.name}</h3>
+                      <p className="text-gray-400 text-sm">{agency.type}</p>
+                      <div className="flex items-center space-x-2 mt-2">
+                        <div className="flex items-center space-x-1">
+                          <Star className="w-4 h-4 text-yellow-400 fill-current" />
+                          <span className="text-white text-sm">{agency.rating}</span>
+                          <span className="text-gray-400 text-sm">({agency.reviews})</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Details */}
+                <div className="px-6 pb-4">
+                  <p className="text-gray-300 text-sm mb-4 line-clamp-2">{agency.description}</p>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-2 gap-4 mb-4 text-sm">
+                    <div className="flex items-center space-x-2 text-gray-400">
+                      <MapPin className="w-4 h-4" />
+                      <span>{agency.location}</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-gray-400">
+                      <Clock className="w-4 h-4" />
+                      <span>{agency.responseTime}</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-gray-400">
+                      <Users className="w-4 h-4" />
+                      <span>{agency.teamSize} members</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-gray-400">
+                      <DollarSign className="w-4 h-4" />
+                      <span>From UGX ---/hr</span>
+                    </div>
+                  </div>
+
+                  {/* Services */}
+                  <div className="mb-4">
+                    <h4 className="text-white text-sm font-medium mb-2">Services</h4>
+                    <div className="flex flex-wrap gap-1">
+                      {agency.services.slice(0, 3).map((service, index) => (
+                        <span key={index} className="px-2 py-1 bg-purple-400/20 text-purple-300 text-xs rounded">
+                          {service}
+                        </span>
+                      ))}
+                      {agency.services.length > 3 && (
+                        <span className="px-2 py-1 bg-gray-600 text-gray-300 text-xs rounded">
+                          +{agency.services.length - 3} more
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Specialties */}
+                  <div className="mb-4">
+                    <h4 className="text-white text-sm font-medium mb-2">Specialties</h4>
+                    <div className="flex flex-wrap gap-1">
+                      {agency.specialties.map((specialty, index) => (
+                        <span key={index} className="px-2 py-1 bg-blue-400/20 text-blue-300 text-xs rounded">
+                          {specialty}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Actions */}
+                <div className="px-6 pb-6">
+                  <div className="flex space-x-2">
+                    <button
+                      onClick={() => handleViewPortfolio(agency.id)}
+                      className="flex-1 py-2 glass-effect text-gray-300 hover:text-white rounded-lg transition-colors flex items-center justify-center space-x-2"
+                    >
+                      <Eye className="w-4 h-4" />
+                      <span>View Work</span>
+                    </button>
+                    <button
+                      onClick={() => handleHire(agency.id, 'agency')}
+                      className="flex-1 py-2 bg-gradient-to-r from-rose-500 to-purple-600 text-white rounded-lg hover:shadow-lg transition-all"
+                    >
+                      {user?.role === 'creator' ? 'Apply' : 'Hire Agency'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : null }
         </div>
 
         {/* Empty State */}
-        {((viewMode === 'talents' && filteredTalents.length === 0) || 
-          (viewMode === 'teams' && filteredTeams.length === 0)) && (
+        {((viewMode === 'talents' && filteredTalents.length === 0) ||
+          (viewMode === 'teams' && filteredTeams.length === 0) ||
+          (viewMode === 'agencies' && filteredAgencies.length === 0)) && (
           <div className="text-center py-12">
             <div className="text-gray-400 mb-4">
               {viewMode === 'talents' ? <Users className="w-16 h-16 mx-auto mb-4" /> : <Building className="w-16 h-16 mx-auto mb-4" />}

@@ -3,13 +3,13 @@ import { User, Heart, Music, Film, Star } from 'lucide-react';
 
 export default function Account() {
   const favoriteCreators = [
-    { id: 1, name: 'Emma Wilson', avatar: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150' },
-    { id: 2, name: 'Sofia Rodriguez', avatar: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { id: 1, name: 'Nakamya Fiona', avatar: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg' },
+    { id: 2, name: 'Nabatanzi Brenda', avatar: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg' },
   ];
 
   const playlists = [
-    { id: 1, name: 'Chill Vibes', content: [{ type: 'music', title: 'Sunset Groove' }, { type: 'music', title: 'Acoustic Soul' }] },
-    { id: 2, name: 'Inspiration', content: [{ type: 'video', title: 'The Last Stand - Short Film' }, { type: 'blog', title: '10 Tips for a Killer Personal Brand' }] },
+    { id: 1, name: 'Chill Vibes', content: [{ type: 'music', title: 'Nile River Blues' }, { type: 'music', title: 'Kampala Sunset' }] },
+    { id: 2, name: 'Inspiration', content: [{ type: 'video', title: 'Kintu - The Legend' }, { type: 'blog', title: 'Building Your Brand in Africa' }] },
   ];
 
   return (

@@ -82,7 +82,7 @@ export default function LandingPage() {
               {
                 icon: <Award className="w-8 h-8" />,
                 title: "Masterclasses",
-                description: "Learn from industry experts. Get certified in digital marketing, acting, modeling, and more."
+                description: "Learn from industry experts. Get certified in digital marketing, acting, modeling, music, and more."
               },
               {
                 icon: <Users className="w-8 h-8" />,
@@ -129,26 +129,26 @@ export default function LandingPage() {
             {
                 type: 'Music',
                 title: 'Midnight Drive',
-                creator: 'DJ Alex',
-                thumbnail: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400'
+                creator: 'DJ Apio',
+                thumbnail: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg'
             },
             {
                 type: 'Video',
                 title: 'City of Dreams',
-                creator: 'FilmMaker Jane',
-                thumbnail: 'https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg?auto=compress&cs=tinysrgb&w=400'
+                creator: 'FilmMaker Akello',
+                thumbnail: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg'
             },
             {
                 type: 'Art',
                 title: 'Abstract Dimensions',
-                creator: 'Artisan Sam',
-                thumbnail: 'https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=400'
+                creator: 'Artisan Mumbere',
+                thumbnail: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg'
             },
             {
                 type: 'Podcast',
                 title: 'The Creative Journey',
-                creator: 'Host Maria',
-                thumbnail: 'https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&w=400'
+                creator: 'Host Dembe',
+                thumbnail: 'https://i.ibb.co/yQdZpS4/ugandan-musician-4.jpg'
             }
             ].map((release, index) => (
             <div key={index} className="glass-effect rounded-2xl overflow-hidden hover-lift group">
@@ -195,24 +195,24 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: 'Emma Wilson',
+                name: 'Nakamya Fiona',
                 role: 'Digital Marketer',
-                avatar: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150'
+                avatar: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg'
               },
               {
-                name: 'Sofia Rodriguez',
+                name: 'Nabatanzi Brenda',
                 role: 'Model & Actress',
-                avatar: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=150'
+                avatar: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg'
               },
               {
-                name: 'Maya Chen',
+                name: 'Apio Sharon',
                 role: 'Event Manager',
-                avatar: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=150'
+                avatar: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg'
               },
               {
-                name: 'Alex Carter',
+                name: 'Mugisha John',
                 role: 'Content Creator',
-                avatar: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=150'
+                avatar: 'https://i.ibb.co/yQdZpS4/ugandan-musician-4.jpg'
               }
             ].map((creator, index) => (
               <div key={index} className="glass-effect rounded-2xl p-6 hover-lift text-center">
@@ -240,7 +240,8 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-8 w-2/3">
             {[
               {
                 name: 'For Members',
@@ -297,6 +298,7 @@ export default function LandingPage() {
                 </div>
               );
             })}
+            </div>
           </div>
         </div>
       </div>
@@ -305,16 +307,16 @@ export default function LandingPage() {
       <div className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-playfair font-bold text-white mb-6">
-            Ready to Showcase Your <span className="gradient-text">Talent?</span>
+            Ready to <span className="gradient-text">show up?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join thousands of talented creatives who are building their careers and achieving their dreams.
+            Join us today to build your career and achieve your dreams.
           </p>
           <Link
             to="/signup"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg"
           >
-            Start Your Journey Today <ArrowRight className="ml-2 w-5 h-5" />
+            Start Your Journey <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
       </div>
