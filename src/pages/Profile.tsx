@@ -10,10 +10,10 @@ export default function Profile() {
   const [profileData, setProfileData] = useState({
     name: user?.name || '',
     email: user?.email || '',
-    phone: '+256 7XX XXX XXX',
+    phone: '+256 772 123456',
     location: 'Kampala, Uganda',
     bio: 'Passionate creative professional with expertise in digital marketing and brand development.',
-    website: 'www.your-portfolio.com',
+    website: 'www.example.com',
     birthday: '1995-06-15'
   });
 

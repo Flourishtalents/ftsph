@@ -5,25 +5,25 @@ export default function Connect() {
   const creators = [
     {
       id: 1,
-      name: 'Nakamya Fiona',
+      name: 'Emma Wilson',
       title: 'Digital Marketing Specialist',
-      avatar: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg',
+      avatar: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150',
       followers: 1256,
       rating: 4.9,
     },
     {
       id: 2,
-      name: 'Nabatanzi Brenda',
+      name: 'Sofia Rodriguez',
       title: 'Professional Model & Actress',
-      avatar: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg',
+      avatar: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=150',
       followers: 894,
       rating: 4.8,
     },
     {
         id: 3,
-        name: 'Apio Sharon',
+        name: 'Maya Chen',
         title: 'Event Management Expert',
-        avatar: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg',
+        avatar: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=150',
         followers: 1560,
         rating: 5.0,
     }
