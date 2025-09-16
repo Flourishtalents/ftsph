@@ -30,7 +30,7 @@ export default function LandingPage() {
               to="/signup"
               className="px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-glow"
             >
-              Start Your Journey <ArrowRight className="inline w-5 h-5 ml-2" />
+              Start Your Journey Today <ArrowRight className="inline w-5 h-5 ml-2" />
             </Link>
             <button className="px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
               <Play className="w-5 h-5 mr-2" />
@@ -314,7 +314,7 @@ export default function LandingPage() {
             to="/signup"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg"
           >
-            Sign up <ArrowRight className="ml-2 w-5 h-5" />
+            Start Your Journey Today <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
       </div>

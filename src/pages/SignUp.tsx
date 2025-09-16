@@ -60,9 +60,7 @@ export default function SignUp() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Account Type Selection */}
             <div>
-              <div className="max-w-md mx-auto">
-                <label className="block text-sm font-medium text-white mb-4 text-left">Choose Account Type</label>
-              </div>
+              <label className="block text-sm font-medium text-white mb-4 text-center">Choose Account Type</label>
               <div className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch gap-8">
                 {accountTypes.map((type) => (
                   <button
