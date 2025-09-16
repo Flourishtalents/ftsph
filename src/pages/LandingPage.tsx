@@ -22,7 +22,7 @@ export default function LandingPage() {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Celebrate and Support the Creatives you Love. Realize your Potential with Opportunities, Projects, Masterclasses, and Media.
+            Celebrate and support the Creatives you love. Realize your potential through our Masterclasses, Media, and Support Projects.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
