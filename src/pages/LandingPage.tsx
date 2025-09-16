@@ -22,7 +22,7 @@ export default function LandingPage() {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Celebrate and Support the Creatives you Love. Realize your Potential with our Masterclasses, Media, and Career Projects.
+            Celebrate and Support the Creatives you Love. Realize your Potential with Opportunities, Projects, Masterclasses, and Media.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -30,7 +30,7 @@ export default function LandingPage() {
               to="/signup"
               className="px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-glow"
             >
-              Sign up <ArrowRight className="inline w-5 h-5 ml-2" />
+              Start your journey today <ArrowRight className="inline w-5 h-5 ml-2" />
             </Link>
             <button className="px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
               <Play className="w-5 h-5 mr-2" />
@@ -233,14 +233,14 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-white mb-6">
-              Join FlourishTalents
+              Join <span className="gradient-text">FlourishTalents</span>
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               Access premium features, personalized content and exclusive support.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-8 gap-8">
+          <div className="grid md:grid-cols-2 gap-16">
             {[
               {
                 name: 'Member Account',
@@ -265,7 +265,7 @@ export default function LandingPage() {
                 : 'bg-gradient-to-r from-yellow-400 to-orange-500 text-black hover:shadow-xl';
 
               return (
-                <div key={index} className={`relative glass-effect p-8 rounded-2xl hover-lift ${ringClass} md:col-span-3 ${index === 0 ? 'md:col-start-2' : ''}`}>
+                <div key={index} className={`relative glass-effect p-8 rounded-2xl hover-lift ${ringClass}`}>
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className={`${badgeClass} px-4 py-1 rounded-full text-sm font-semibold`}>
                       Recommended
