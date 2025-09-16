@@ -233,14 +233,14 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-white mb-6">
-              Choose Your <span className="gradient-text">Membership</span>
+              Join FlourishTalents
             </h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               Access premium features, personalized content and exclusive support.
             </p>
           </div>
 
-          <div className="flex justify-center gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-8 gap-8">
             {[
               {
                 name: 'Member Account',
@@ -265,7 +265,7 @@ export default function LandingPage() {
                 : 'bg-gradient-to-r from-yellow-400 to-orange-500 text-black hover:shadow-xl';
 
               return (
-                <div key={index} className={`relative glass-effect p-8 rounded-2xl hover-lift ${ringClass} w-2/5`}>
+                <div key={index} className={`relative glass-effect p-8 rounded-2xl hover-lift ${ringClass} md:col-span-3 ${index === 0 ? 'md:col-start-2' : ''}`}>
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className={`${badgeClass} px-4 py-1 rounded-full text-sm font-semibold`}>
                       Recommended
@@ -307,8 +307,8 @@ export default function LandingPage() {
           <h2 className="text-4xl font-playfair font-bold text-white mb-6">
             Ready to <span className="gradient-text">Flourish</span>?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Join us today and give talent as a Creator or a Member
+          <p className="text-lg text-gray-300 mb-8">
+            Join us today as a Creator or a Member
           </p>
           <Link
             to="/signup"
