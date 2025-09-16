@@ -61,13 +61,13 @@ export default function SignUp() {
             {/* Account Type Selection */}
             <div>
               <label className="block text-sm font-medium text-white mb-4">Choose Account Type</label>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto">
+              <div className="flex justify-center gap-8">
                 {accountTypes.map((type) => (
                   <button
                     key={type.type}
                     type="button"
                     onClick={() => setFormData({ ...formData, accountType: type.type as any })}
-                    className={`p-4 rounded-xl border-2 transition-all duration-300 ${
+                    className={`p-4 rounded-xl border-2 transition-all duration-300 w-2/5 ${
                       formData.accountType === type.type
                         ? 'border-rose-400 bg-rose-400/10'
                         : 'border-white/20 hover:border-white/40'

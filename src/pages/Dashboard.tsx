@@ -26,7 +26,7 @@ export default function Dashboard() {
 
   const recentActivity = [
     { action: 'Portfolio updated', time: '2 hours ago', type: 'update' },
-    { action: 'New follower: Achen Grace', time: '4 hours ago', type: 'follower' },
+    { action: 'New follower: Sarah Johnson', time: '4 hours ago', type: 'follower' },
     { action: 'Media content approved', time: '1 day ago', type: 'approval' },
     { action: 'Masterclass completed', time: '2 days ago', type: 'achievement' }
   ];
@@ -191,7 +191,7 @@ export default function Dashboard() {
               <div className="flex space-x-2">
                 <input
                   type="text"
-                  value="REF-FLOURISH-XYZ"
+                  value="REF-TT2025-USER1"
                   readOnly
                   className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white text-sm"
                 />

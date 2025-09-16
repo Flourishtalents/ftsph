@@ -22,7 +22,7 @@ export default function LandingPage() {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Celebrate and support the Creatives you love. Discover your potential and flourish through our Masterclasses, Media, and Career Projects.
+            Celebrate and Support the Creatives you Love. Realize your Potential with our Masterclasses, Media, and Career Projects.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -30,7 +30,7 @@ export default function LandingPage() {
               to="/signup"
               className="px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 animate-glow"
             >
-              Start Your Journey <ArrowRight className="inline w-5 h-5 ml-2" />
+              Sign up <ArrowRight className="inline w-5 h-5 ml-2" />
             </Link>
             <button className="px-8 py-4 glass-effect text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 flex items-center justify-center">
               <Play className="w-5 h-5 mr-2" />
@@ -49,7 +49,7 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center space-x-2">
               <Award className="w-5 h-5 text-yellow-400" />
-              <span>Certification</span>
+              <span>Certified Talent</span>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function LandingPage() {
               {
                 icon: <Award className="w-8 h-8" />,
                 title: "Masterclasses",
-                description: "Learn from industry experts. Get certified in digital marketing, acting, modeling, music, and more."
+                description: "Learn from industry experts. Get certified in digital marketing, acting, modeling, and more."
               },
               {
                 icon: <Users className="w-8 h-8" />,
@@ -129,26 +129,26 @@ export default function LandingPage() {
             {
                 type: 'Music',
                 title: 'Midnight Drive',
-                creator: 'DJ Apio',
-                thumbnail: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg'
+                creator: 'DJ Alex',
+                thumbnail: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400'
             },
             {
                 type: 'Video',
                 title: 'City of Dreams',
-                creator: 'FilmMaker Akello',
-                thumbnail: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg'
+                creator: 'FilmMaker Jane',
+                thumbnail: 'https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg?auto=compress&cs=tinysrgb&w=400'
             },
             {
                 type: 'Art',
                 title: 'Abstract Dimensions',
-                creator: 'Artisan Mumbere',
-                thumbnail: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg'
+                creator: 'Artisan Sam',
+                thumbnail: 'https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=400'
             },
             {
                 type: 'Podcast',
                 title: 'The Creative Journey',
-                creator: 'Host Dembe',
-                thumbnail: 'https://i.ibb.co/yQdZpS4/ugandan-musician-4.jpg'
+                creator: 'Host Maria',
+                thumbnail: 'https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&w=400'
             }
             ].map((release, index) => (
             <div key={index} className="glass-effect rounded-2xl overflow-hidden hover-lift group">
@@ -195,24 +195,24 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: 'Nakamya Fiona',
+                name: 'Emma Wilson',
                 role: 'Digital Marketer',
-                avatar: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg'
+                avatar: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150'
               },
               {
-                name: 'Nabatanzi Brenda',
+                name: 'Sofia Rodriguez',
                 role: 'Model & Actress',
-                avatar: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg'
+                avatar: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=150'
               },
               {
-                name: 'Apio Sharon',
+                name: 'Maya Chen',
                 role: 'Event Manager',
-                avatar: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg'
+                avatar: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=150'
               },
               {
-                name: 'Mugisha John',
+                name: 'Alex Carter',
                 role: 'Content Creator',
-                avatar: 'https://i.ibb.co/yQdZpS4/ugandan-musician-4.jpg'
+                avatar: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=150'
               }
             ].map((creator, index) => (
               <div key={index} className="glass-effect rounded-2xl p-6 hover-lift text-center">
@@ -240,17 +240,16 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 gap-8 w-2/3">
+          <div className="flex justify-center gap-12">
             {[
               {
-                name: 'For Members',
+                name: 'Member Account',
                 description: 'Support creators, access exclusive media, follow favorites, and get early access to events.',
                 benefits: ['Exclusive Media', 'Follow & Support', 'Priority Access', 'Community'],
                 link: '/member-membership'
               },
               {
-                name: 'For Creators',
+                name: 'Creator Account',
                 description: 'Build a standout portfolio, stream your media, access masterclasses, and apply to projects.',
                 benefits: ['Advanced Portfolio', 'Media & Streaming', 'Masterclasses', 'Career Projects'],
                 link: '/creator-membership'
@@ -266,7 +265,7 @@ export default function LandingPage() {
                 : 'bg-gradient-to-r from-yellow-400 to-orange-500 text-black hover:shadow-xl';
 
               return (
-                <div key={index} className={`relative glass-effect p-8 rounded-2xl hover-lift ${ringClass}`}>
+                <div key={index} className={`relative glass-effect p-8 rounded-2xl hover-lift ${ringClass} w-2/5`}>
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className={`${badgeClass} px-4 py-1 rounded-full text-sm font-semibold`}>
                       Recommended
@@ -293,12 +292,11 @@ export default function LandingPage() {
                     onClick={() => (user ? navigate(tier.link) : navigate(`/signin?redirect=${tier.link}`))}
                     className={`block w-full py-3 text-center font-semibold rounded-lg transition-all duration-300 ${ctaClass}`}
                   >
-                    View Details
+                    Get Started
                   </button>
                 </div>
               );
             })}
-            </div>
           </div>
         </div>
       </div>
@@ -307,16 +305,16 @@ export default function LandingPage() {
       <div className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-playfair font-bold text-white mb-6">
-            Ready to <span className="gradient-text">show up?</span>
+            Ready to <span className="gradient-text">Flourish</span>?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join us today to build your career and achieve your dreams.
+            Join us today and give talent as a Creator or a Member
           </p>
           <Link
             to="/signup"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-rose-500 to-purple-600 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg"
           >
-            Start Your Journey <ArrowRight className="ml-2 w-5 h-5" />
+            Sign up <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
       </div>

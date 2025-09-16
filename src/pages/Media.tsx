@@ -14,9 +14,9 @@ export default function Media() {
     stream: [
       {
         id: 1,
-        title: 'Kampala Hustle - Official Music Video',
-        creator: 'Nassanga Brenda',
-        thumbnail: 'https://i.ibb.co/3Y7f4kC/ugandan-musician-1.jpg',
+        title: 'Cyber City - Official Music Video',
+        creator: 'Jasmine Carter',
+        thumbnail: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400',
         duration: '4:15',
         views: 150000,
         likes: 12000,
@@ -26,9 +26,9 @@ export default function Media() {
       },
       {
         id: 2,
-        title: 'The Pearl of Africa - Short Film',
-        creator: 'Mugisha John',
-        thumbnail: 'https://via.placeholder.com/400',
+        title: 'The Last Stand - Short Film',
+        creator: 'David Lee',
+        thumbnail: 'https://images.pexels.com/photos/269140/pexels-photo-269140.jpeg?auto=compress&cs=tinysrgb&w=400',
         duration: '12:30',
         views: 89000,
         likes: 7500,
@@ -40,9 +40,9 @@ export default function Media() {
     listen: [
       {
         id: 1,
-        title: 'Nile Groove',
-        creator: 'DJ Ssekyewa',
-        thumbnail: 'https://i.ibb.co/z4VSCB8/ugandan-musician-2.jpg',
+        title: 'Sunset Groove',
+        creator: 'DJ Alex',
+        thumbnail: 'https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=400',
         duration: '3:45',
         plays: 25000,
         category: 'electronic',
@@ -51,9 +51,9 @@ export default function Media() {
       },
       {
         id: 2,
-        title: 'Murchison Falls Soul',
-        creator: 'Namutebi Prossy',
-        thumbnail: 'https://i.ibb.co/PNqC1D8/ugandan-musician-3.jpg',
+        title: 'Acoustic Soul',
+        creator: 'Maya Patel',
+        thumbnail: 'https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&w=400',
         duration: '2:50',
         plays: 18000,
         category: 'acoustic',
@@ -64,9 +64,9 @@ export default function Media() {
     blog: [
         {
             id: 1,
-            title: 'Building Your Brand in the Pearl',
-            creator: 'Okello David',
-            thumbnail: 'https://via.placeholder.com/400',
+            title: '10 Tips for a Killer Personal Brand',
+            creator: 'Alex Chen',
+            thumbnail: 'https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=400',
             readTime: '5 min read',
             category: 'branding',
         }
@@ -74,18 +74,18 @@ export default function Media() {
     gallery: [
       {
         id: 1,
-        title: 'Ugandan Crafts Collection',
-        creator: 'Adongo Christine',
-        image: 'https://via.placeholder.com/400',
+        title: 'Brand Identity Collection',
+        creator: 'Maya Chen',
+        image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
         likes: 1200,
         category: 'design',
         isPremium: false
       },
       {
         id: 2,
-        title: 'Faces of Kampala Series',
-        creator: 'Nanteza Irene',
-        image: 'https://via.placeholder.com/400',
+        title: 'Portrait Photography Series',
+        creator: 'Isabella Martinez',
+        image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400',
         likes: 2100,
         category: 'photography',
         isPremium: true
@@ -94,9 +94,9 @@ export default function Media() {
     resources: [
       {
         id: 1,
-        title: 'Ugandan Business Templates',
-        creator: 'Kampala Design Hub',
-        image: 'https://via.placeholder.com/400',
+        title: 'Social Media Templates Pack',
+        creator: 'Design Studio Pro',
+        image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
         price: 115000,
         rating: 4.8,
         sales: 1250,
@@ -104,9 +104,9 @@ export default function Media() {
       },
       {
         id: 2,
-        title: 'Afrobeat Essentials Sound Kit',
-        creator: 'Gulu Sound Masters',
-        image: 'https://via.placeholder.com/400',
+        title: 'Producer\'s Essential Sound Kit',
+        creator: 'Beat Crafters',
+        image: 'https://images.pexels.com/photos/3971985/pexels-photo-3971985.jpeg?auto=compress&cs=tinysrgb&w=400',
         price: 190000,
         rating: 4.9,
         sales: 890,
@@ -114,9 +114,9 @@ export default function Media() {
       },
       {
           id: 3,
-          title: 'Freelancers\' Contract Guide',
-          creator: 'Legal',
-          image: 'https://via.placeholder.com/400',
+          title: 'Freelance Contract Template',
+          creator: 'Legal Eagles',
+          image: 'https://images.pexels.com/photos/1181257/pexels-photo-1181257.jpeg?auto=compress&cs=tinysrgb&w=400',
           price: 95000,
           rating: 4.7,
           sales: 540,
@@ -316,7 +316,7 @@ export default function Media() {
                         <Star className="w-4 h-4 text-yellow-400" />
                         <span>{item.rating}</span>
                       </div>
-                      <div className="text-rose-400 font-bold">UGX ---</div>
+                      <div className="text-rose-400 font-bold">UGX {item.price.toLocaleString()}</div>
                     </>
                   )}
                 </div>
